@@ -12,142 +12,144 @@
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <div class="container nav-container">
-            <a href="index.html" class="logo">BEL<span>Company LTD</span></a>
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <i class="fas fa-bars"></i>
-            </button>
-            <nav id="mainNav">
+<!-- ================= HEADER ================= -->
+<header>
+    <div class="container nav-container">
+        <a href="index.html" class="logo">BEL<span>Company LTD</span></a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav id="mainNav">
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link active">About</a></li>
+                <li class="has-dropdown">
+                    <a href="services.html" class="nav-link">Services <i class="fas fa-chevron-down dropdown-arrow"></i></a>
+                    <ul class="dropdown" id="servicesDropdown">
+                        <li><a href="services.html#residential">Residential</a></li>
+                        <li><a href="services.html#commercial">Commercial</a></li>
+                        <li><a href="services.html#renovation">Renovation</a></li>
+                        <li><a href="services.html#planning">Planning</a></li>
+                    </ul>
+                </li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="mobile-overlay" id="mobileOverlay"></div>
+
+<!-- ================= PAGE HERO ================= -->
+<section class="page-hero about-bg">
+    <div class="page-hero-content fade-in">
+        <h1>About BEL Company LTD</h1>
+        <p>Delivering professional construction and trading services in South Sudan with integrity and quality.</p>
+    </div>
+</section>
+
+<!-- ================= ABOUT SECTION ================= -->
+<section class="about-section">
+    <div class="container">
+
+        <!-- About Company -->
+        <div class="about-content fade-in">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1581091215361-2a9a5f5f6c01?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="BEL Construction Team">
+            </div>
+            <div class="about-text">
+                <h2>Building Quality and Trust Since 2018</h2>
+                <p>BEL Company LTD is a leading construction and general trading company in Juba, South Sudan. We specialize in residential, commercial, and renovation projects with a focus on durability, innovation, and client satisfaction.</p>
+                <p>Our team of skilled architects, engineers, and construction professionals ensures every project is executed with precision and professionalism. We are committed to building long-lasting structures and strong relationships with our clients.</p>
+
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="5">5+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="50">50+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="30">30+</div>
+                        <div class="stat-label">Skilled Professionals</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mission & Vision -->
+        <div class="about-content fade-in reverse">
+            <div class="about-text">
+                <h2>Our Mission & Vision</h2>
+                <p><strong>Mission:</strong> To provide top-quality construction and trading services across South Sudan, delivering projects on time with integrity, safety, and excellence.</p>
+                <p><strong>Vision:</strong> To become South Sudan's most trusted construction and trading company, recognized for high-quality projects and client satisfaction.</p>
+                <p><strong>Values:</strong> Quality, Integrity, Safety, Innovation, and Client Focus guide all our work.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1565182999561-7dcd32a8eeca?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Construction Site">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-about">
+                <div class="footer-logo">BEL<span>Company LTD</span></div>
+                <p>Leading construction and trading services in South Sudan. We build quality structures and lasting client relationships.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3 class="footer-heading">Quick Links</h3>
                 <ul>
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="about.html" class="nav-link active">About</a></li>
-                    <li class="has-dropdown">
-                        <a href="services.html" class="nav-link">Services <i class="fas fa-chevron-down dropdown-arrow"></i></a>
-                        <ul class="dropdown" id="servicesDropdown">
-                            <li><a href="services.html#residential">Residential</a></li>
-                            <li><a href="services.html#commercial">Commercial</a></li>
-                            <li><a href="services.html#renovation">Renovation</a></li>
-                            <li><a href="services.html#planning">Planning</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="projects.html" class="nav-link">Projects</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+                    <li><a href="projects.html"><i class="fas fa-chevron-right"></i> Projects</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
                 </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Mobile Overlay -->
-    <div class="mobile-overlay" id="mobileOverlay"></div>
-
-    <!-- Page Hero -->
-    <section class="page-hero about-bg">
-        <div class="page-hero-content">
-            <h1>About BEL Company LTD</h1>
-            <p>Delivering professional construction and trading services in South Sudan with integrity and quality.</p>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about-section">
-        <div class="container">
-            <div class="about-content fade-in">
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1581091215361-2a9a5f5f6c01?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="BEL Construction Team">
-                </div>
-                <div class="about-text">
-                    <h2>Building Quality and Trust Since 2018</h2>
-                    <p>BEL Company LTD is a leading construction and general trading company in Juba, South Sudan. We specialize in residential, commercial, and renovation projects with a focus on durability, innovation, and client satisfaction.</p>
-                    <p>Our team of skilled architects, engineers, and construction professionals ensures every project is executed with precision and professionalism. We are committed to building long-lasting structures and strong relationships with our clients.</p>
-                    
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <div class="stat-number" data-count="5">5+</div>
-                            <div class="stat-label">Years Experience</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number" data-count="50">50+</div>
-                            <div class="stat-label">Projects Completed</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number" data-count="30">30+</div>
-                            <div class="stat-label">Skilled Professionals</div>
-                        </div>
-                    </div>
-                </div>
             </div>
-
-            <!-- Mission & Vision -->
-            <div class="about-content fade-in" style="margin-top: 6rem;">
-                <div class="about-text">
-                    <h2>Our Mission & Vision</h2>
-                    <p><strong>Mission:</strong> To provide top-quality construction and trading services across South Sudan, delivering projects on time with integrity, safety, and excellence.</p>
-                    <p><strong>Vision:</strong> To become South Sudan's most trusted construction and trading company, recognized for high-quality projects and client satisfaction.</p>
-                    <p><strong>Values:</strong> Quality, Integrity, Safety, Innovation, and Client Focus guide all our work.</p>
-                </div>
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1565182999561-7dcd32a8eeca?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Construction Site">
-                </div>
+            <div class="footer-links">
+                <h3 class="footer-heading">Services</h3>
+                <ul>
+                    <li><a href="services.html#residential"><i class="fas fa-chevron-right"></i> Residential Construction</a></li>
+                    <li><a href="services.html#commercial"><i class="fas fa-chevron-right"></i> Commercial Construction</a></li>
+                    <li><a href="services.html#renovation"><i class="fas fa-chevron-right"></i> Renovation Works</a></li>
+                    <li><a href="services.html#planning"><i class="fas fa-chevron-right"></i> Project Planning</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3 class="footer-heading">Contact Info</h3>
+                <ul>
+                    <li><a href="tel:+211917767251"><i class="fas fa-phone"></i> +211 917 767 251</a></li>
+                    <li><a href="mailto:battousaienterprise@gmail.com"><i class="fas fa-envelope"></i> battousaienterprise@gmail.com</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Juba, South Sudan</a></li>
+                    <li><a href="https://wa.me/211917767251" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                </ul>
             </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-about">
-                    <div class="footer-logo">BEL<span>Company LTD</span></div>
-                    <p>Leading construction and trading services in South Sudan. We build quality structures and lasting client relationships.</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="footer-links">
-                    <h3 class="footer-heading">Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
-                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
-                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
-                        <li><a href="projects.html"><i class="fas fa-chevron-right"></i> Projects</a></li>
-                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h3 class="footer-heading">Services</h3>
-                    <ul>
-                        <li><a href="services.html#residential"><i class="fas fa-chevron-right"></i> Residential Construction</a></li>
-                        <li><a href="services.html#commercial"><i class="fas fa-chevron-right"></i> Commercial Construction</a></li>
-                        <li><a href="services.html#renovation"><i class="fas fa-chevron-right"></i> Renovation Works</a></li>
-                        <li><a href="services.html#planning"><i class="fas fa-chevron-right"></i> Project Planning</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h3 class="footer-heading">Contact Info</h3>
-                    <ul>
-                        <li><a href="tel:+211917767251"><i class="fas fa-phone"></i> +211 917 767 251</a></li>
-                        <li><a href="mailto:battousaienterprise@gmail.com"><i class="fas fa-envelope"></i> battousaienterprise@gmail.com</a></li>
-                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Juba, South Sudan</a></li>
-                        <li><a href="https://wa.me/211917767251" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>© 2025 BEL Company LTD. All rights reserved. | Juba, South Sudan</p>
-            </div>
+        <div class="copyright">
+            <p>© 2025 BEL Company LTD. All rights reserved. | Juba, South Sudan</p>
         </div>
-    </footer>
+    </div>
+</footer>
 
-    <!-- Back to Top Button -->
-    <a href="#" class="back-to-top" id="backToTop">
-        <i class="fas fa-chevron-up"></i>
-    </a>
+<!-- ================= BACK TO TOP BUTTON ================= -->
+<a href="#" class="back-to-top" id="backToTop">
+    <i class="fas fa-chevron-up"></i>
+</a>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
