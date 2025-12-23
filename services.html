@@ -3,335 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Construction Services | BEL Construction | Juba, South Sudan</title>
-    <meta name="description" content="Complete construction services in Juba, South Sudan - Commercial, residential, infrastructure, renovation, and project management.">
-    
-    <!-- Fonts -->
+    <title>Our Services | BEL Company LTD</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700;800&family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Styles -->
     <link rel="stylesheet" href="style.css">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/96/000000/construction.png">
 </head>
-<body class="services-page">
-    <!-- ===== PREMIUM HEADER ===== -->
-    <header id="header">
-        <div class="container">
-            <div class="nav-container">
-                <a href="index.html" class="logo">
-                    <i class="fas fa-hard-hat logo-icon"></i>
-                    BEL <span>Construction</span>
-                </a>
-                
-                <nav class="desktop-nav">
-                    <ul>
-                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                        <li><a href="about.html"><i class="fas fa-building"></i> About</a></li>
-                        <li><a href="services.html" class="active"><i class="fas fa-tools"></i> Services</a></li>
-                        <li><a href="portfolio.html"><i class="fas fa-project-diagram"></i> Portfolio</a></li>
-                        <li><a href="contact.html"><i class="fas fa-phone-alt"></i> Contact</a></li>
-                    </ul>
-                </nav>
-                
-                <button class="mobile-menu-btn" id="mobileMenuBtn">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
+<body>
+    
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">BEL<span>Company LTD</span></a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li class="has-dropdown">
+                        <a href="services.html" class="nav-link active">Services <i class="fas fa-chevron-down dropdown-arrow"></i></a>
+                        <ul class="dropdown" id="servicesDropdown">
+                            <li><a href="#residential">Residential</a></li>
+                            <li><a href="#commercial">Commercial</a></li>
+                            <li><a href="#renovation">Renovation</a></li>
+                            <li><a href="#planning">Planning</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        
-        <!-- Mobile Navigation -->
-        <nav class="mobile-nav" id="mobileNav">
-            <ul>
-                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="about.html"><i class="fas fa-building"></i> About</a></li>
-                <li><a href="services.html" class="active"><i class="fas fa-tools"></i> Services</a></li>
-                <li><a href="portfolio.html"><i class="fas fa-project-diagram"></i> Portfolio</a></li>
-                <li><a href="contact.html"><i class="fas fa-phone-alt"></i> Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <!-- ===== PAGE HERO ===== -->
-    <section class="page-hero">
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Page Hero -->
+    <section class="page-hero services-bg">
         <div class="page-hero-content">
-            <h1>Our Construction Services</h1>
-            <p>Comprehensive building solutions tailored to South Sudan's unique construction needs.</p>
+            <h1>Our Premium Services</h1>
+            <p>High-quality construction and general trading solutions tailored to your needs across South Sudan.</p>
         </div>
     </section>
 
-    <!-- ===== SERVICES DETAILS ===== -->
-    <section id="services-details">
+    <!-- Services Section -->
+    <section class="services-section">
         <div class="container">
-            <div class="section-title">
-                <h2>Complete Construction Solutions</h2>
-            </div>
-            
-            <p class="section-subtitle">From initial design to final completion, we provide end-to-end construction services with the highest standards of quality and safety.</p>
-            
-            <div class="services-grid">
-                <!-- Commercial Construction -->
-                <div class="service-card fade-in" id="commercial">
-                    <div class="service-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
-                    <div class="service-content">
-                        <h3>Commercial Construction</h3>
-                        <p>We specialize in constructing office buildings, retail centers, hotels, and commercial complexes that meet international standards while considering local requirements and materials availability in South Sudan.</p>
-                        <ul style="margin-bottom: 1.5rem; color: #666;">
-                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
-                                <i class="fas fa-check" style="color: var(--gold); position: absolute; left: 0;"></i> Office towers and complexes
-                            </li>
-                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
-                                <i class="fas fa-check" style="color: var(--gold); position: absolute; left: 0;"></i> Retail and shopping centers
-                            </li>
-                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
-                                <i class="fas fa-check" style="color: var(--gold); position: absolute; left: 0;"></i> Hotel and hospitality facilities
-                            </li>
-                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
-                                <i class="fas fa-check" style="color: var(--gold); position: absolute; left: 0;"></i> Industrial warehouses and factories
-                            </li>
-                        </ul>
-                        <a href="contact.html?service=commercial" class="btn btn-outline">Get Commercial Quote</a>
-                    </div>
-                </div>
-                
+            <h2 class="section-title fade-in">Our Expertise</h2>
+            <div class="services-container">
+
                 <!-- Residential Construction -->
-                <div class="service-card fade-in" id="residential">
-                    <div class="service-icon">
-                        <i class="fas fa-home"></i>
+                <div class="service-item fade-in" id="residential">
+                    <div class="service-header" data-service="residential">
+                        <h3><i class="fas fa-home service-icon"></i> Residential Construction</h3>
+                        <i class="fas fa-chevron-down service-arrow"></i>
                     </div>
                     <div class="service-content">
-                        <h3>Residential Construction</h3>
-                        <p>Building homes and residential complexes that combine comfort, durability, and modern design. We understand the importance of creating living spaces that withstand South Sudan's climate while providing modern amenities.</p>
-                        <ul style="margin-bottom: 1.5rem; color: #666;">
-                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
-                                <i class="fas fa-check" style="color: var(--gold); position: absolute; left: 0;"></i> Luxury villas and single-family homes
-                            </li>
-                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
-                                <i class="fas fa-check" style="color: var(--gold); position: absolute; left: 0;"></i> Apartment buildings and complexes
-                            </li>
-                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
-                                <i class="fas fa-check" style="color: var(--gold); position: absolute; left: 0;"></i> Gated communities and housing estates
-                            </li>
-                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
-                                <i class="fas fa-check" style="color: var(--gold); position: absolute; left: 0;"></i> Affordable housing developments
-                            </li>
-                        </ul>
-                        <a href="contact.html?service=residential" class="btn btn-outline">Get Residential Quote</a>
+                        <div class="service-details">
+                            <div class="service-subitem">
+                                <h4>Custom Homes</h4>
+                                <p>Design and build personalized homes tailored to your style and needs.</p>
+                            </div>
+                            <div class="service-subitem">
+                                <h4>Luxury Villas & Compounds</h4>
+                                <p>Premium residences with high-end finishes, security, and landscaped surroundings.</p>
+                            </div>
+                            <div class="service-subitem">
+                                <h4>Home Extensions</h4>
+                                <p>Expand your existing property seamlessly with quality craftsmanship.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
-                <!-- Infrastructure Development -->
-                <div class="service-card fade-in">
-                    <div class="service-icon">
-                        <i class="fas fa-road"></i>
+
+                <!-- Commercial Construction -->
+                <div class="service-item fade-in" id="commercial">
+                    <div class="service-header" data-service="commercial">
+                        <h3><i class="fas fa-building service-icon"></i> Commercial Construction</h3>
+                        <i class="fas fa-chevron-down service-arrow"></i>
                     </div>
                     <div class="service-content">
-                        <h3>Infrastructure Development</h3>
-                        <p>Contributing to South Sudan's growth through robust infrastructure projects including roads, bridges, drainage systems, and public facilities designed for longevity and minimal maintenance.</p>
-                        <ul style="margin-bottom: 1.5rem; color: #666;">
-                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
-                                <i class="fas fa-check" style="color: var(--gold); position: absolute; left: 0;"></i> Road construction and rehabilitation
-                            </li>
-                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
-                                <i class="fas fa-check" style="color: var(--gold); position: absolute; left: 0;"></i> Bridge and culvert construction
-                            </li>
-                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
-                                <i class="fas fa-check" style="color: var(--gold); position: absolute; left: 0;"></i> Drainage and water management systems
-                            </li>
-                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
-                                <i class="fas fa-check" style="color: var(--gold); position: absolute; left: 0;"></i> Public facility construction
-                            </li>
-                        </ul>
-                        <a href="contact.html?service=infrastructure" class="btn btn-outline">Get Infrastructure Quote</a>
+                        <div class="service-details">
+                            <div class="service-subitem">
+                                <h4>Office & Retail Spaces</h4>
+                                <p>Construct offices, shops, and shopping complexes with modern functionality.</p>
+                            </div>
+                            <div class="service-subitem">
+                                <h4>Industrial & Hospitality Facilities</h4>
+                                <p>Warehouses, factories, hotels, and restaurants built to the highest standards.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
-                <!-- Renovation & Remodeling -->
-                <div class="service-card fade-in">
-                    <div class="service-icon">
-                        <i class="fas fa-paint-roller"></i>
+
+                <!-- Renovation & Finishing -->
+                <div class="service-item fade-in" id="renovation">
+                    <div class="service-header" data-service="renovation">
+                        <h3><i class="fas fa-paint-roller service-icon"></i> Renovation & Finishing</h3>
+                        <i class="fas fa-chevron-down service-arrow"></i>
                     </div>
                     <div class="service-content">
-                        <h3>Renovation & Remodeling</h3>
-                        <p>Transforming existing structures with modern upgrades, repairs, and extensions. We breathe new life into buildings while preserving their structural integrity and character.</p>
-                        <ul style="margin-bottom: 1.5rem; color: #666;">
-                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
-                                <i class="fas fa-check" style="color: var(--gold); position: absolute; left: 0;"></i> Building restoration and preservation
-                            </li>
-                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
-                                <i class="fas fa-check" style="color: var(--gold); position: absolute; left: 0;"></i> Interior and exterior remodeling
-                            </li>
-                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
-                                <i class="fas fa-check" style="color: var(--gold); position: absolute; left: 0;"></i> Structural repairs and reinforcements
-                            </li>
-                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
-                                <i class="fas fa-check" style="color: var(--gold); position: absolute; left: 0;"></i> Modernization and expansion projects
-                            </li>
-                        </ul>
-                        <a href="contact.html?service=renovation" class="btn btn-outline">Get Renovation Quote</a>
+                        <div class="service-details">
+                            <div class="service-subitem">
+                                <h4>Building Renovations</h4>
+                                <p>Upgrade existing structures with modern finishes and improved layouts.</p>
+                            </div>
+                            <div class="service-subitem">
+                                <h4>Interior & Exterior Finishing</h4>
+                                <p>Expert plastering, painting, tiling, and decorative finishes for premium results.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
-                <!-- Project Management -->
-                <div class="service-card fade-in">
-                    <div class="service-icon">
-                        <i class="fas fa-tasks"></i>
+
+                <!-- Project Planning & Management -->
+                <div class="service-item fade-in" id="planning">
+                    <div class="service-header" data-service="planning">
+                        <h3><i class="fas fa-clipboard-list service-icon"></i> Project Planning & Management</h3>
+                        <i class="fas fa-chevron-down service-arrow"></i>
                     </div>
                     <div class="service-content">
-                        <h3>Construction Management</h3>
-                        <p>Professional oversight of construction projects from conception to completion, ensuring timelines, budgets, and quality standards are met while managing all stakeholders effectively.</p>
-                        <ul style="margin-bottom: 1.5rem; color: #666;">
-                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
-                                <i class="fas fa-check" style="color: var(--gold); position: absolute; left: 0;"></i> Full project planning and scheduling
-                            </li>
-                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
-                                <i class="fas fa-check" style="color: var(--gold); position: absolute; left: 0;"></i> Budget management and cost control
-                            </li>
-                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
-                                <i class="fas fa-check" style="color: var(--gold); position: absolute; left: 0;"></i> Contractor and subcontractor management
-                            </li>
-                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
-                                <i class="fas fa-check" style="color: var(--gold); position: absolute; left: 0;"></i> Quality assurance and compliance
-                            </li>
-                        </ul>
-                        <a href="contact.html?service=management" class="btn btn-outline">Get Management Quote</a>
+                        <div class="service-details">
+                            <div class="service-subitem">
+                                <h4>Project Management</h4>
+                                <p>Ensure timely, budget-friendly, and high-quality completion of all construction projects.</p>
+                            </div>
+                            <div class="service-subitem">
+                                <h4>Design & Consulting</h4>
+                                <p>Architectural planning, 3D design, and expert consultation for efficient project execution.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
-                <!-- Design & Architecture -->
-                <div class="service-card fade-in">
-                    <div class="service-icon">
-                        <i class="fas fa-drafting-compass"></i>
-                    </div>
-                    <div class="service-content">
-                        <h3>Design & Architecture</h3>
-                        <p>Creative and functional architectural designs that blend aesthetic appeal with practical considerations for South Sudan's climate, culture, and available materials.</p>
-                        <ul style="margin-bottom: 1.5rem; color: #666;">
-                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
-                                <i class="fas fa-check" style="color: var(--gold); position: absolute; left: 0;"></i> Architectural design and planning
-                            </li>
-                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
-                                <i class="fas fa-check" style="color: var(--gold); position: absolute; left: 0;"></i> 3D modeling and visualization
-                            </li>
-                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
-                                <i class="fas fa-check" style="color: var(--gold); position: absolute; left: 0;"></i> Structural engineering and analysis
-                            </li>
-                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
-                                <i class="fas fa-check" style="color: var(--gold); position: absolute; left: 0;"></i> Sustainable and green building design
-                            </li>
-                        </ul>
-                        <a href="contact.html?service=design" class="btn btn-outline">Get Design Quote</a>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- ===== PROCESS SECTION ===== -->
-    <section class="bg-light">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Construction Process</h2>
-            </div>
-            
-            <p class="section-subtitle">We follow a meticulous, step-by-step approach to ensure every project is completed to the highest standards.</p>
-            
-            <div class="process-steps" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2.5rem; margin-top: 4rem;">
-                <div class="process-step fade-in" style="text-align: center;">
-                    <div style="width: 100px; height: 100px; background: linear-gradient(135deg, var(--gold), var(--gold-light)); border-radius: 50%; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5rem; font-weight: bold;">1</div>
-                    <h3 style="margin-bottom: 1rem;">Consultation & Planning</h3>
-                    <p>We begin by understanding your vision, requirements, and budget to create a detailed project plan.</p>
-                </div>
-                
-                <div class="process-step fade-in" style="text-align: center;">
-                    <div style="width: 100px; height: 100px; background: linear-gradient(135deg, var(--gold), var(--gold-light)); border-radius: 50%; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5rem; font-weight: bold;">2</div>
-                    <h3 style="margin-bottom: 1rem;">Design & Engineering</h3>
-                    <p>Our architects and engineers create detailed designs and structural plans tailored to your needs.</p>
-                </div>
-                
-                <div class="process-step fade-in" style="text-align: center;">
-                    <div style="width: 100px; height: 100px; background: linear-gradient(135deg, var(--gold), var(--gold-light)); border-radius: 50%; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5rem; font-weight: bold;">3</div>
-                    <h3 style="margin-bottom: 1rem;">Material Procurement</h3>
-                    <p>We source high-quality materials from reliable suppliers, ensuring durability and value.</p>
-                </div>
-                
-                <div class="process-step fade-in" style="text-align: center;">
-                    <div style="width: 100px; height: 100px; background: linear-gradient(135deg, var(--gold), var(--gold-light)); border-radius: 50%; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5rem; font-weight: bold;">4</div>
-                    <h3 style="margin-bottom: 1rem;">Construction & Supervision</h3>
-                    <p>Our skilled team executes the project with regular quality checks and client updates.</p>
-                </div>
-                
-                <div class="process-step fade-in" style="text-align: center;">
-                    <div style="width: 100px; height: 100px; background: linear-gradient(135deg, var(--gold), var(--gold-light)); border-radius: 50%; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5rem; font-weight: bold;">5</div>
-                    <h3 style="margin-bottom: 1rem;">Final Inspection & Handover</h3>
-                    <p>We conduct thorough inspections before handing over the completed project with all documentation.</p>
-                </div>
-            </div>
+    <!-- Call to Action -->
+    <section class="page-hero" style="height: 50vh; margin-top: 0; background: linear-gradient(rgba(44, 44, 44, 0.8), rgba(44, 44, 44, 0.6)), url('https://images.unsplash.com/photo-1503387769-00a112127ca0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');">
+        <div class="page-hero-content">
+            <h2 style="font-size: 3rem;">Ready to Start Your Project?</h2>
+            <p style="font-size: 1.3rem; margin-bottom: 2.5rem;">Contact us today for a free consultation and quote.</p>
+            <a href="contact.html" class="btn">Get Free Consultation</a>
         </div>
     </section>
 
-    <!-- ===== CTA SECTION ===== -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content fade-in">
-                <h2>Start Your Construction Project</h2>
-                <p>Contact us today for a detailed consultation and customized quote for your construction needs in Juba.</p>
-                <a href="contact.html" class="btn">Get Your Free Quote</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== FOOTER ===== -->
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-about">
-                    <a href="index.html" class="footer-logo">BEL <span>Construction</span></a>
-                    <p>Leading construction company in Juba, South Sudan. We specialize in commercial, residential, and infrastructure projects with unmatched quality and reliability.</p>
-                    
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <div class="footer-logo">BEL<span>Company LTD</span></div>
+                    <p>Providing high-quality construction and trading services in South Sudan, ensuring client satisfaction and professional delivery.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                
                 <div class="footer-links">
-                    <h4>Quick Links</h4>
+                    <h3 class="footer-heading">Quick Links</h3>
                     <ul>
                         <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
                         <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
                         <li><a href="services.html"><i class="fas fa-chevron-right"></i> Our Services</a></li>
-                        <li><a href="portfolio.html"><i class="fas fa-chevron-right"></i> Portfolio</a></li>
-                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                        <li><a href="projects.html"><i class="fas fa-chevron-right"></i> Projects</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
                     </ul>
                 </div>
-                
-                <div class="footer-contact">
-                    <h4>Contact Info</h4>
-                    <p><i class="fas fa-map-marker-alt"></i> Juba, South Sudan</p>
-                    <p><i class="fas fa-phone-alt"></i> +211 917 767 251</p>
-                    <p><i class="fas fa-envelope"></i> info@belconstruction.com</p>
-                    <p><i class="fab fa-whatsapp"></i> +211 987 654 321</p>
+                <div class="footer-links">
+                    <h3 class="footer-heading">Services</h3>
+                    <ul>
+                        <li><a href="services.html#residential"><i class="fas fa-chevron-right"></i> Residential Construction</a></li>
+                        <li><a href="services.html#commercial"><i class="fas fa-chevron-right"></i> Commercial Construction</a></li>
+                        <li><a href="services.html#renovation"><i class="fas fa-chevron-right"></i> Renovation & Finishing</a></li>
+                        <li><a href="services.html#planning"><i class="fas fa-chevron-right"></i> Project Management</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-heading">Contact Info</h3>
+                    <ul>
+                        <li><a href="tel:+211917767251"><i class="fas fa-phone"></i> +211 917 767 251</a></li>
+                        <li><a href="mailto:battousaienterprise@gmail.com"><i class="fas fa-envelope"></i> battousaienterprise@gmail.com</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Juba, South Sudan</a></li>
+                        <li><a href="https://wa.me/211917767251" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                    </ul>
                 </div>
             </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 BEL Construction Company LTD. All Rights Reserved. | Premium Construction Services in Juba, South Sudan</p>
+            <div class="copyright">
+                <p>© 2025 BEL Company LTD. All rights reserved. | Juba, South Sudan</p>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript -->
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
     <script src="script.js"></script>
 </body>
 </html>
