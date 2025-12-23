@@ -442,10 +442,12 @@ section {
 /* ================= ABOUT SECTION ================= */
 .about-home-content {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* two columns by default */
+    grid-template-columns: 1fr 1fr;
     gap: 3rem;
     align-items: center;
-    margin: 4rem 0;
+    max-width: 1200px;      /* constrain overall width */
+    margin: 4rem auto;      /* center content */
+    padding: 0 1rem;        /* small side padding for mobile */
 }
 
 /* Image Container */
@@ -453,13 +455,16 @@ section {
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: var(--shadow-hover);
-    max-width: 100%;           /* image container won't exceed column */
+    max-width: 100%;
+    height: auto;
 }
 
 .about-home-image img {
-    width: 100%;               /* image fills its container */
-    height: auto;              /* keep aspect ratio */
+    width: 100%;
+    height: auto;
     display: block;
+    object-fit: cover;       /* ensures image fills container without distortion */
+    max-height: 500px;       /* limit height to avoid huge images */
 }
 
 /* Stats Section */
@@ -500,18 +505,23 @@ section {
 /* ================= RESPONSIVE STYLING ================= */
 @media (max-width: 1024px) {
     .about-home-content {
-        grid-template-columns: 1fr; /* stack columns on smaller screens */
+        grid-template-columns: 1fr;
         gap: 2rem;
     }
 
     .about-home-image {
-        max-width: 100%;
+        max-height: 400px;
     }
 }
 
 @media (max-width: 600px) {
     .about-home-content {
-        margin: 2rem 0;
+        margin: 2rem auto;
+        gap: 1.5rem;
+    }
+
+    .about-home-image {
+        max-height: 300px;
     }
 
     .about-stat-number {
